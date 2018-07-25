@@ -1,1 +1,19 @@
 <h1>{{title}}</h1>
+<div class="widget_wrapper">
+    <header>
+        <div class="list_info">
+            <h3>List Name <span class="badge">1</span></h3>
+            <span>Total {{ postNum }}</span>
+        </div>
+        <div class="list_functions">
+            <a href="#"><img src="assets/plus.png" alt="add list item"></a>
+            <expand-collapse></expand-collapse>
+        </div>
+    </header>
+    <main>
+        <app-list-item></app-list-item>
+    </main>
+    <footer>
+        <a href="#">Load More</a>
+    </footer>
+</div>

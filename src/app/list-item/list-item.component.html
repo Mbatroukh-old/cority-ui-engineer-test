@@ -1,0 +1,16 @@
+<div class="list_item" *ngFor="let post of posts">
+    <div class="item_details">
+        <div *ngIf="post.img.length;then image else noImage">here is ignored</div>
+        <ng-template #image><img src="{{post.img}}" alt=""></ng-template>
+        <ng-template #noImage><div class="photo-wrap"><img src="assets/photo.png" alt=""></div></ng-template>
+        <div class="data_group">
+            <h4>{{post.title}}</h4>
+            <span>{{post.sub_title}}</span>
+            <!-- <p>{{post.content}}</p> -->
+            <date-pipe></date-pipe>
+        </div>
+    </div>
+    <button>
+        <img src="assets/delete.png" alt="remove list item">
+    </button>
+</div>
