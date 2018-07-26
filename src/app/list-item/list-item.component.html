@@ -5,8 +5,9 @@
         <ng-template #noImage><div class="photo-wrap"><img src="assets/photo.png" alt=""></div></ng-template>
         <div class="data_group">
             <h4>{{post.title}}</h4>
+            <!-- <h1>{{ postNum }}</h1> -->
             <span>{{post.sub_title}}</span>
-            <!-- <p>{{post.content}}</p> -->
+            <p>{{post.content | slice : 0 : 80 }}</p>
             <date-pipe></date-pipe>
         </div>
     </div>

@@ -7,10 +7,14 @@
         </div>
         <div class="list_functions">
             <a href="#"><img src="assets/plus.png" alt="add list item"></a>
-            <expand-collapse></expand-collapse>
+            <!-- <expand-collapse></expand-collapse> -->
+            <div (click)='expandCollapse()'>
+                <img src="assets/down-arrow.png" alt="expand and collapse section">
+            </div>
         </div>
     </header>
-    <main>
+    <main [@CollapseExpandAnimation]='state'>
+        <!-- <main> -->
         <app-list-item></app-list-item>
     </main>
     <footer>

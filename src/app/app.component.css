@@ -63,6 +63,29 @@
     background: #d7d7d7;
 }
 
+.list_functions div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    float: left;
+}
+.list_functions div img {
+    width: 10px;
+}
+
+.list_functions div:hover {
+    background: #d7d7d7;
+}
+
+main{
+    max-height: 350px;
+    overflow-y: scroll;
+}
+
 footer{
     background: #ebebeb;
     border-radius: 0 0 5px 5px;

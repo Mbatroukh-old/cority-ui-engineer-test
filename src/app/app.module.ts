@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppComponent, ExpandComponent } from './app.component';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { AppComponent } from './app.component';
 import { ListItemComponent } from './list-item/list-item.component';
 import {
   DatePipeComponent
@@ -10,14 +10,11 @@ import {
 @NgModule({
   declarations: [
     AppComponent,
-    ExpandComponent,
     ListItemComponent,
     DatePipeComponent
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
