@@ -26,14 +26,14 @@ import { trigger, state, style, transition, animate, keyframes } from '@angular/
 })
 export class AppComponent {
   title = "Cority UI Engineer Test";
-  // public postNum: any;
   state: string = "expand";
-
-  // @ViewChild(ListItemComponent) child;
-  // ngAfterViewInit() {
-  //   this.postNum = this.child.postNum;
-  // }
+  postNum: any;
+  @ViewChild(ListItemComponent) child;
+  ngOnInit() {
+    this.postNum = this.child.postNum;
+  }
   expandCollapse() {
     this.state = this.state === "expand" ? "collapse" : "expand";
   }
+  constructor() {}
 }
