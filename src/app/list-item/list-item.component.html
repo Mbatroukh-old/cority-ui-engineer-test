@@ -1,4 +1,4 @@
-<div class="list_item" *ngFor="let post of posts">
+<div class="list_item" *ngFor="let post of posts.slice().reverse()">
     <div class="item_details">
         <div *ngIf="post.img.length;then image else noImage">here is ignored</div>
         <ng-template #image><img src="{{post.img}}" alt=""></ng-template>
@@ -11,7 +11,7 @@
             <date-pipe></date-pipe>
         </div>
     </div>
-    <button>
+    <button (click)=''>
         <img src="assets/delete.png" alt="remove list item">
     </button>
 </div>

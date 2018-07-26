@@ -39,18 +39,10 @@ export class ListItemComponent implements OnInit {
         sub_title: "at rhoncus justo sodales",
         content:
           "Aliquam sed dolor non quam aliquet fermentum sed at tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla urna velit, viverra sit amet elit eget, aliquam porttitor turpis."
-      },
-      {
-        img: "assets/image4.jpeg",
-        title: "Mauris accumsan porta accumsan",
-        sub_title: "Cras faucibus rhoncus purus vel pharetra",
-        content:
-          "Sed ultricies mi non turpis efficitur, vel posuere augue sollicitudin. Aenean maximus odio vitae laoreet bibendum. Pellentesque eu nunc erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent mollis eget odio a tristique. Pellentesque eu mattis erat. Quisque tempus turpis ut arcu tempor, eu dictum nisl vehicula. Sed vel malesuada urna, posuere imperdiet nibh. Phasellus eget dui pellentesque metus condimentum elementum ac sed justo."
       }
     ];
     this.postNum = this.posts.length;
   }
-
 
   ngOnInit() {}
 }

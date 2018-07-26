@@ -40,27 +40,12 @@
     margin-left: 10px;
 }
 
-.list_functions a{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    float: left;
-}
-
-.list_functions a:first-child img{
+.list_functions div:first-child img{
     width: 15px;
 }
 
-.list_functions a:last-child img{
+.list_functions div:last-child img{
     width: 10px;
-}
-
-.list_functions a:hover{
-    background: #d7d7d7;
 }
 
 .list_functions div {

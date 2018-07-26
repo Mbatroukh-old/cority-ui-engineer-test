@@ -6,8 +6,9 @@
             <span>Total {{ postNum }}</span>
         </div>
         <div class="list_functions">
-            <a href="#"><img src="assets/plus.png" alt="add list item"></a>
-            <!-- <expand-collapse></expand-collapse> -->
+            <div (click)='addItem()'>
+                <img src="assets/plus.png" alt="add list item">
+            </div>
             <div (click)='expandCollapse()'>
                 <img src="assets/down-arrow.png" alt="expand and collapse section">
             </div>
